@@ -55,6 +55,8 @@ if __name__ == '__main__':
                 hourlyRank.setdefault(i, []).append(rank[i])
 
     msg = ''
+    #sendEmail2([],'test')
+    #print 'sent'
     for key, val in hourlyRank.items():
         keymax = max(val)
         keymin = min(val)
